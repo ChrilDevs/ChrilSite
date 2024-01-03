@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+ <style>
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange }
+    }
+  </style>
+<body class="bg-[#222222]">
+  <div class="ml-8 mt-8 flex items-center absolute">
+    <span class="bg-[#007df1] h-10 w-10 rounded-full flex justify-center items-center text-3xl text-white font-serif">C</span>
+    <h1 class="text-2xl text-white font-serif ml-3 pt-1">Chril Site</h1>
+
+  </div>
+<section class="text-white flex flex-wrap">
+  <div class="container flex flex-col justify-center p-6 mx-auto lg:flex-row lg:justify-between h-screen max-w-screen-xl md:mt-0 mt-20">
+    <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 lg:min-h-screen lg:w-1/2  ">
+      <div class="bg-[#444444] p-3 rounded-full shadow-2xl">
+              <img src="https://cdn.discordapp.com/attachments/1191889077159604375/1192128265368907897/def_pic_chril-photoaidcom-cropped_2.png?ex=65a7f2f7&is=65957df7&hm=85a3591380821749cf13ae1652c9be68ef14550c55425538aa0eed6c7c1d52b8&" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+
+      </div>
+    </div>
+    <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-3xl xl:max-w-3xl lg:text-left lg:w-1/2">
+      <span class="mb-3 text-md text-zinc-400 font-semibold">Creator/Video Editor</span>
+      <h1 class="text-5xl font-bold leading-none sm:text-6xl">Chril</h1>
+      <p class="mt-6 text-md mb-12 text-zinc-400 h-10" id="text"></p>
+      <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+        <a rel="noopener noreferrer" href="#" class="px-8 py-2 text-md font-semibold border-[3px] border-[#295c8a] rounded-full shadow-xl transition ease-in-out delay-150  hover:-translate-y-1  hover:scale-110 duration-300 bg-[#333333]">Fiverr</a>
+        <a rel="noopener noreferrer" href="https://discord.gg/JCjcmuqY" class="px-8 py-2 text-md font-semibold border-[3px] border-[#888888] rounded-full shadow-xl transition ease-in-out delay-150  hover:-translate-y-1  hover:scale-110 duration-300 bg-[#333333]">Discord</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
+ <script>
+    const text = "HI! I'm chril, I'm a video editor. I discovered the passion for editing recently but I strive every day to always give my best! I also have a YouTube channel that I have been running for years and of which I am very proud!";
+    let index = 0;
+    const speed = 50;
+
+    function typeWriter() {
+      if (index < text.length) {
+        document.getElementById("text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+  </script>
