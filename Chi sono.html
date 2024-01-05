@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #222222;
+        }
+
+        .top-bar {
+            background-color: #333;
+            color: #fff;
+            text-align: right;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            position: relative;
+            z-index: 2;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .top-bar a:hover {
+            color: #ff0;
+            transform: scale(1.1);
+            animation: enlarge 0.3s ease;
+        }
+
+        @keyframes enlarge {
+            from {
+                transform: scale(1)
+            }
+
+            to {
+                transform: scale(1.1)
+            }
+        }
+
+        .header-image {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 3;
+        }
+
+        .site-title {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .site-title h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .site-title h1:hover {
+            transform: scale(1.1);
+        }
+
+        .site-title h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .branding {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 4;
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .content-section h2:hover {
+            transform: scale(1.1);
+        }
+
+        .content-section p {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Aggiunta animazione di riquadro */
+        .hover-box {
+            display: inline-block;
+            position: relative;
+        }
+
+        .hover-box:before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            bottom: -5px;
+            left: -5px;
+            border: 2px solid #007df1;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .hover-box:hover:before {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        /* Aggiunta stile link per i riquadri */
+        .hover-box a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-[#222222]">
+    <div class="mt.12 mt-10 flex items-center absolute z-3 top-15">
+        <span class="bg-[#007df1] h-10 w-10 rounded-full flex justify-center items-center text-4xl text-white font-serif">C</span>
+        <h1 class="text-2xl text-white font-serif ml-3 pt-2">Chril Site</h1>
+    </div>
+
+    <div class="top-bar">
+        <a href="index.html">Home</a>
+        <a href="Chi sono.html">Chi sono</a>
+    </div>
+
+    <div class="header-image"></div>
+
+    <div class="content-section">
+        <h2 class="hover-box"><a href="Chi sono.html">Chi sono</a></h2>
+        <p>Il mio nome è Christian e sono un ragazzo con tantissimi progetti in mente al momento. Sono l'owner di <a href="https://discord.gg/TqCHb4SycD" style="color: #007df1;">SkyMC</a> e ho un canale YouTube.</p>
+
+        <h2 class="hover-box"><a href="#passione-tecnologia">La mia passione per la tecnologia</a></h2>
+        <p>Sono appassionato di tecnologia sin da giovane, questa passione mi ha anche portato poi ad aprire un canale youtube di cui sono molto fiero.</p>
+
+        <h2 class="hover-box"><a href="progetti.html">Progetti recenti</a></h2>
+        <p>Recentemento ho lavorato a diversi progetti, siti, server minecraft e altro, alcuni di questi puoi trovarli nella sezione progetti.</p>
+
+        <h2 class="hover-box"><a href="#contattami">Contattami</a></h2>
+        <p>Sono sempre aperto a nuove opportunità di collaborazione e progetti interessanti. Se hai domande o vuoi entrare in contatto, non esitare a farmi sapere attraverso il mio <a href="https://discord.gg/vMVYaJpks9" style="color: #007df1;">server discord</a> o attraverso la mia mail <span id="copyTrigger" class="copy-trigger" onclick="copyText()">commercialchril@gmail.com</span></p>
+        
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                .copy-trigger {
+                    display: inline-block;
+                    cursor: pointer;
+                    transition: color 0.3s ease;
+                    user-select: none; /* Evita la selezione del testo */
+                }
+        
+                .copy-trigger:hover {
+                    color: #007df1;
+                }
+            </style>
+        </head>
+        
+        <body>
+          
+        
+            <script>
+                function copyText() {
+                    var textToCopy = "commercialchril@gmail.com";
+                    var dummyInput = document.createElement('input');
+                    document.body.appendChild(dummyInput);
+                    dummyInput.setAttribute('value', textToCopy);
+                    dummyInput.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(dummyInput);
+        
+                    alert('Testo copiato negli appunti: ' + textToCopy);
+                }
+            </script>
+        </body>
+        
+    </div>
+</body>
+
+
+
