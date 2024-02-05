@@ -1,63 +1,212 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Chril Portfolio</title>
 </head>
- <style>
 
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-    
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: orange }
-    }
-  </style>
-<body class="bg-[#222222]">
-  <div class="ml-8 mt-8 flex items-center absolute">
-    <span class="bg-[#007df1] h-10 w-10 rounded-full flex justify-center items-center text-3xl text-white font-serif">C</span>
-    <h1 class="text-2xl text-white font-serif ml-3 pt-1">Chril Site</h1>
+<body>
 
-  </div>
-<section class="text-white flex flex-wrap">
-  <div class="container flex flex-col justify-center p-6 mx-auto lg:flex-row lg:justify-between h-screen max-w-screen-xl md:mt-0 mt-20">
-    <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 lg:min-h-screen lg:w-1/2  ">
-      <div class="bg-[#444444] p-3 rounded-full shadow-2xl">
-              <img src="https://cdn.discordapp.com/attachments/1191889077159604375/1192128265368907897/def_pic_chril-photoaidcom-cropped_2.png?ex=65a7f2f7&is=65957df7&hm=85a3591380821749cf13ae1652c9be68ef14550c55425538aa0eed6c7c1d52b8&" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logo.png">
+            </a>
+        </div>
 
-      </div>
+        <ul class="nav-links">
+            <li class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="#">Project</a></li>
+            <li id="link2" class="link"><a href="#">Services</a></li>
+            <li id="link3" class="link"><a href="#">About</a></li>
+        </ul>
+        
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>YOUTUBER AND VIDEO EDITOR</h4>
+            <H1>Hi, I'm <span>Chril</span>, Creator and Video Editor</H1>
+            <p>
+                I am a YouTuber and my passion was born in 2021, one day I decided to open a YouTube channel to bring my content about video games, to date I am very proud of it. In 2023 I discovered the passion for editing, and every day I always give my best to improve.
+            </p>
+            <button class="btn">Get Started</button>
+        </div>
+        <div class="image">
+            <img src="images/header.png">
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="header">MY PROJECTS</h2>
+        <div class="features">
+            <div class="card">
+                <span><i class="ri-money-dollar-box-line"></i></span>
+                <h4>Youtube</h4>
+                <p>
+                    My youtube channel Chrilgamer.
+                </p>
+                <a href="https://youtube.com/@chrilgamer?si=BzlKn6wMm_A_B81l">Check <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-bug-line"></i></span>
+                <h4>Chrilgamer Community</h4>
+                <p>
+                    My discord server.
+                </p>
+                <a href="https://dsc.gg/chrilgamer-community">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-history-line"></i></span>
+                <h4>Sky Project</h4>
+                <p>
+                    My company, called Sky Studios, has a wide range of projects and features. We have a minecraft server called SkyMc. We also sell a lot of products.
+                </p>
+                <a href="https://discord.gg/GVSJFK5pYd">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-shake-hands-line"></i></span>
+                <h4>Video Editor</h4>
+                <p>
+                    I'm a video editor, if you want me to edit a video for you you can do it via Fiverr
+                </p>
+                <a href="https://it.fiverr.com/chril_?public_mode=true">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="header">MY SUBSCRIPTION PLANS</h2>
+        <p class="sub-header">
+            My subscription plan, with many benefits.
+        </p>
+        <div class="pricing">
+            <div class="card">
+                <div class="content">
+                    <h4>Vip 1 month</h4>
+                    <h3>1$</h3>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        VIP access for one month
+                    </p>
+                    
+                </div>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Vip</h4>
+                    <h3>10$</h3>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Vip access for one year
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Access to live broadcasts
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Giveaway with prizes
+                    </p>
+                </div>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>The god</h4>
+                    <h3>20$</h3>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Vip for a year
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Access to live broadcasts
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Participate in videos
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Events with prizes up for grabs
+                    </p>
+                   
+                </div>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <p>
+                Make your dreams come true and you will achieve great success
+            </p>
+            <div class="socials">
+                <a href="https://youtube.com/@chrilgamer?si=mbITAqdMU-52FOi0"><i class="ri-youtube-line"></i></a>
+                <a href="https://www.instagram.com/it.chril?igsh=MXAzejgydXEzMjlsOA=="><i class="ri-instagram-line"></i></a>
+                <a href="https://x.com/Chril_7?t=x4A7jnpRyDfJXU_Hw96euw&s=08"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Company</h4>
+            <a href="#" onclick="copyText(); return false;">Mail</a>
+            <a href="https://dsc.gg/chrilgamer-community">Partnership</a>
+            <a href="https://discord.gg/skymc">SkyMc</a>
+        </div>
+        <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Video Editor</a>
+            <a href="#">Creator</a>
+            <a href="#">Developer</a>
+        </div>
+        <script>
+            function copyText() {
+              // Testo da copiare
+              var testoDaCopiare = "chrilmanager@chrilsite.com";
+          
+              // Creazione di un elemento textarea temporaneo
+              var textarea = document.createElement("textarea");
+              textarea.value = testoDaCopiare;
+          
+              // Aggiunta dell'elemento textarea alla pagina
+              document.body.appendChild(textarea);
+          
+              // Seleziona il testo nella textarea
+              textarea.select();
+          
+              // Copia il testo negli appunti del sistema
+              document.execCommand('copy');
+          
+              // Rimozione dell'elemento textarea temporaneo
+              document.body.removeChild(textarea);
+          
+              // Puoi anche fornire un feedback visivo all'utente, ad esempio:
+              alert('Copy address: ' + testoDaCopiare);
+            }
+          </script>
+          
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2024 Chril Portfolio. All Rights Reserved.
     </div>
-    <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-3xl xl:max-w-3xl lg:text-left lg:w-1/2">
-      <span class="mb-3 text-md text-zinc-400 font-semibold">Creator/Video Editor</span>
-      <h1 class="text-5xl font-bold leading-none sm:text-6xl">Chril</h1>
-      <p class="mt-6 text-md mb-12 text-zinc-400 h-10" id="text"></p>
-      <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-        <a rel="noopener noreferrer" href="http://www.fiverr.com/s/QV9Av1" class="px-8 py-2 text-md font-semibold border-[3px] border-[#295c8a] rounded-full shadow-xl transition ease-in-out delay-150  hover:-translate-y-1  hover:scale-110 duration-300 bg-[#333333]">Fiverr</a>
-        <a rel="noopener noreferrer" href="https://discord.gg/JCjcmuqY" class="px-8 py-2 text-md font-semibold border-[3px] border-[#888888] rounded-full shadow-xl transition ease-in-out delay-150  hover:-translate-y-1  hover:scale-110 duration-300 bg-[#333333]">Discord</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 
+    <script src="script.js"></script>
 </body>
+
 </html>
- <script>
-    const text = "HI! I'm chril, I'm a video editor. I discovered the passion for editing recently but I strive every day to always give my best! I also have a YouTube channel that I have been running for years and of which I am very proud!";
-    let index = 0;
-    const speed = 50;
-
-    function typeWriter() {
-      if (index < text.length) {
-        document.getElementById("text").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeWriter, speed);
-      }
-    }
-
-    typeWriter();
-  </script>
